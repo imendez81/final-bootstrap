@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Entrega Final - Boostrap</title>
+    <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css"> -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="img/favicon2.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reloj.css">
+</head>
+<body>
+
+    <div id="header" class="header container">
+        <div class="alert alert-info alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>¡Atención! </strong> Esta es la página desarrollada para la entrega final del curso de Boostrap - UTN.
+        </div>
+        <nav id="menu" class="row">
+ 
+            <script>
+            var f=new Date();
+            var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+            document.write('<div class="mifecha">');
+            document.write('<div class="dia">' + f.getDate() + ' de ' + meses[f.getMonth()] + '</div>');
+            document.write('</div>');
+            </script>
+
+            <a class="col-sm-3" href="#header">Inicio</a>
+            <a class="col-sm-3" href="#trabajos">Servicios</a>
+            <a class="col-sm-3" href="#registro">Contacto</a>
+        </nav>
+        <div class="mobilemenu">
+            <div class="dropdownu">
+                <button class="btn btn-secondary dropdown-toggle" type="button" 
+                    id="menu1" data-toggle="dropdown">Menú
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1" >
+                <li role="presentation">
+                    <a href="#header" class="dropdown-item">Inicio</a>
+                </li>
+                <li role="presentation">
+                    <a href="#trabajos" class="dropdown-item">Servicios</a>
+                </li>
+                <li role="presentation">
+                    <a href="#registro" class="dropdown-item">Contacto</a>
+                </li>
+                </ul>
+            </div>    
+            </div>
+        </div>
+    </div>
+
+    <div class="hero row">
+        <div class="contenido-hero col-12">
+            <h1>Diseño y Desarrollo Web Freelancer</h1>
+            <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+            <a class="btn btn-info" href="#registro">Contactar</a>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <main class="servicios">
+            <h2 id="trabajos">Nuestros Servicios</h2>
+            <div id="carouselExampleIndicators" class="carousel slide contenedor carouselfondo" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" style="background-color: rgba(115, 117, 117, 0.68);"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1" style="background-color: rgba(115, 117, 117, 0.68);"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2" style="background-color: rgba(115, 117, 117, 0.68);"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <h3>SOCIAL MEDIA</h3>
+                    <div class="iconos">
+                        <img class="d-block img-fluid" style="margin: 0 auto" src="img/Socialmedia-pm.png" alt="First slide">
+                    </div>
+                    <p>Profesionales de marketing digital responsables de la gestión y desarrollo de la comunidad online de tu marca o empresa en el mundo digital. Mediante la gestión y desarrollo, aumentará la comunidad para detectar a tus potenciales clientes y suscriptores.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <h3>APLICACIONES MÓVILES</h3>
+                    <div class="iconos">
+                        <img class="d-block img-fluid" style="margin: 0 auto" src="img/app.png" alt="Second slide">
+                    </div>
+                    <p>Desarrollaremos una aplicación informática diseñada para ser ejecutada en teléfonos inteligentes, tabletas y otros dispositivos móviles. Este tipo de aplicaciones permiten al usuario efectuar un variado conjunto de tareas tanto profesionales como de ocio o educativas.</p>
+                  </div>
+                  <div class="carousel-item">
+                    <h3>DISEÑO WEB</h3>
+                    <div class="iconos">
+                        <img class="d-block img-fluid" style="margin: 0 auto" src="img/web-design.png" alt="Third slide">
+                    </div>
+                    <p>Consiste en la planificación, diseño, implementación y mantenimiento de tus sitios web. Abarca diferentes aspectos, como el diseño gráfico web, diseño de interfaz y experiencia de usuario, la navegabilidad,  usabilidad y arquitectura de la información.</p>
+                  </div>
+                </div>
+                <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" style="background-color: rgb(146, 156, 153);" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" style="background-color: rgb(146, 156, 153);" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a> -->
+              </div>
+        </main>
+
+        <section class="row" >
+
+            <form id='registro' role="form" class="container" action="index.html" method="POST">
+                <fieldset>
+                    <legend> Contactanos: </legend>
+                    <div class="form-group">
+                        <div class="registro col-md-11">
+                            <label for="nombre">Nombre:</label>
+                            <input class="form-control" type="text" maxlength="50" required name="nombre" id="nombre" placeholder=" Tu nombre">
+                        </div>
+                        <div class="registro col-md-11">
+                            <label for="telefono">Teléfono:</label>
+                            <input class="form-control" type="tel" required name="telefono" id="telefono" placeholder=" Tu número de teléfono">
+                        </div>
+                        <div class="registro col-md-11">
+                            <label for="correo">E-mail:</label>
+                            <input class="form-control" type="email" maxlength="50" required name="correo" id="correo" placeholder=" Tu correo electrónico">
+                        </div>
+                        <div id="error" class="error"></div>
+                    </div>
+
+                    <div class="forma_contacto">
+
+                        <h4>¿Cómo queres que te contactemos?</h4>
+
+                        <div class="opcion">
+                            <label for="forma">Forma de contacto deseada:</label>
+                            <select required id="forma">
+                                <option value="">- Seleccioná una opción--</option>
+                                <option value="TEL">Teléfono</option>
+                                <option value="CORREO">Correo electrónico</option>
+                            </select>
+                        </div>
+
+                        <div class="mens row">
+                            <label class="col-lg-2 col-sm-3" for="msg">Comentarios:</label>
+                            <textarea class="col-lg-9 col-sm-8" rows="5" id="msg" maxlength="300"></textarea>
+                        </div>
+
+                    </div>
+
+                    <div id="envio">
+                        <input id="botonContacto" type="submit" class="btn btn-info" value="Enviar datos">
+                    </div>
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <footer id="footer" class="row contenedor">
+            <div id="datos" class="col-md">
+                <address>
+                    <strong>Ignacio Méndez</strong><br>
+                    Avenida Callao 123 <br>
+                    Buenos Aires, CP1022.  Argentina.<br>
+                    <abbr title="Teléfono">Tel:</abbr> +549 123 45678
+                </address>
+            </div>
+            <div id="links" class="col-md">
+                <nav class="row">
+                    <a class="col-sm-3 badge badge-info" href="#header">Inicio</a>
+                    <a class="col-sm-3 badge badge-info" href="#trabajos">Servicios</a>
+                    <a class="col-sm-3 badge badge-info" href="#registro">Contacto</a>
+                </nav>
+            </div>
+        </footer>
+        
+    <script src="js/js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

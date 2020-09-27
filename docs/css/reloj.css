@@ -1,0 +1,44 @@
+.mifecha {
+
+    font-family: 'Krub', sans-serif;
+
+    padding: 3px;
+
+    width: 125px;
+
+    text-align: center;
+
+    font-size: 1.3rem;
+
+}
+
+.mifecha .ano{
+
+    padding: 2px;
+
+    margin-bottom: 3px;
+
+    color: #212121;
+
+    letter-spacing: 3px;
+
+}
+
+.mifecha .dia{
+
+    padding: 0;
+
+    margin-bottom: 3px;
+
+    color: #212121;
+
+}
+
+.mifecha .mes{
+
+    padding: 2px;
+
+    color: #212121;
+
+}
+
